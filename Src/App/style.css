@@ -1,0 +1,33 @@
+* {
+  font-family: arial;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+}
+
+grid {
+  display: block;
+  margin: 20px;
+}
+
+grid row {
+  display: block;
+  height: 20px
+}
+
+grid row cell {
+   min-width: 50px;
+   max-width: 100px;
+   display: inline-block;
+   text-align: center;
+}
+
+.heading {
+  font-weight: bold;
+}
+
+.validation {
+  color: #f00;
+  font-size: 0.8em;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-GB" ng-app="PrimeTables">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="css/style.css" />
+	<title>Prime Number Multiplication Table</title>
+</head>
+<body>
+	<div ng-controller="MainController as vm" ng-cloak>
+		<h1>Optimus Matrix Prime</h1>
+		<input type="text" placeholder="please enter a number" ng-model="vm.number" ng-change="vm.drawPrimesTable()"/>
+		<span class="validation">{{vm.validationError}}</span>
+		<grid>
+			<row>
+				<cell></cell>
+				<cell class="heading" ng-repeat="prime in vm.primes">{{prime}}</cell>
+			</row>
+			<row ng-repeat="yPrime in vm.primes">
+				<cell class="heading">{{yPrime}}</cell>
+				<cell ng-repeat="xPrime in vm.primes">{{vm.primeIntersection(xPrime, yPrime)}}</cell>
+			</row>
+		</grid>
+	</div>
+	<script type="text/javascript" src="js/lib/angular.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>
