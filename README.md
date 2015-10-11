@@ -5,7 +5,7 @@ Web app that generates a multiplication table of prime numbers.
 ### Run
 Open /Dist/index.html in your favourite browser.
 
-![run](http://i.imgur.com/DAgYzta.png)
+![run](http://i.imgur.com/DAgYzta.png?1)
 
 ### Develop
 Prerequisites: node/npm
@@ -32,7 +32,7 @@ Example:
 3. protractor /Tests/Acceptance/conf.js
 
 Example:
-![acceptance](http://i.imgur.com/QjyLe2l.jpg)
+![acceptance](http://i.imgur.com/luXLFwu.png)
 
 ## What I'm pleased with
 - Clean separation of concerns and responsibilities.
