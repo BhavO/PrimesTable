@@ -5,8 +5,10 @@ Web app that generates a multiplication table of prime numbers.
 ### Run
 Open /Dist/index.html in your favourite browser.
 
+![run](http://i.imgur.com/DAgYzta.png)
+
 ### Develop
-Prerequisites node/npm
+Prerequisites: node/npm
 
 ##### Get dependencies and install tools
 1. Open command prompt in project directory
@@ -21,10 +23,16 @@ Gulp is used to manage development tasks, run the below tasks for your desired a
 - gulp test (run tests and re-run on file change)
 - gulp testrun (run tests headless)
 
+Example:
+![build](http://i.imgur.com/1o4gHHg.png)
+
 ##### Acceptance Tests
 1. Open command prompt and enter: webdriver-manager start
 2. Open another command prompt in project directory
 3. protractor /Tests/Acceptance/conf.js
+
+Example:
+![acceptance](http://i.imgur.com/QjyLe2l.jpg)
 
 ## What I'm pleased with
 - Clean separation of concerns and responsibilities.
