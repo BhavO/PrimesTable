@@ -35,11 +35,12 @@ Gulp is used to manage development tasks, run the below tasks for your desired a
 - Very flexible UI design as its just plain html/css.
 
 ## What I would do with it if I had more time
-- Incorporate acceptance test run with build, unit and integration, coverage are already.
-- Include JSCS
+- Incorporate acceptance test run with build task (unit, integration and coverage report are already)
+- Include JSCS and other
 - Refactor view model for matrix intersection to not require input
 - Split error message into separate resource file
 - Make use of angular validation plugins and/or html5 input validation.
+- use ES2015 with babel (maybe typescript) but probably would have been overkill.
 
 ## Notes
 The requirement for only the first 10 primes numbers has meant I have done what is minimally needed to meet the acceptance criteria, I have implemented the prime number generation as a simple slice of the first 10 primes, a full blown prime number algorithm would be overkill when it is not required, this means we deliver maximum value with minimal effort and complexity.
