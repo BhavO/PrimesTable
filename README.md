@@ -1,5 +1,5 @@
-# Primes Table (Interview Tech Test)
-Web app that generates a multiplication table of prime numbers.
+# Primes Table
+Interview tech test Web app that generates a multiplication table of prime numbers.
 
 ## How to run it
 ### Run
