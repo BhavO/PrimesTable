@@ -1,3 +1,4 @@
+/// <binding AfterBuild='build' />
 var KarmaServer = require('karma').Server,
     gulp = require('gulp'),
 		jshint = require('gulp-jshint'),
