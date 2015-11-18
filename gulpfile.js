@@ -1,11 +1,13 @@
 /// <binding AfterBuild='build' />
 var KarmaServer = require('karma').Server,
     gulp = require('gulp'),
-		jshint = require('gulp-jshint'),
+	jshint = require('gulp-jshint'),
     clean = require('gulp-clean'),
-		concat = require('gulp-concat'),
+	concat = require('gulp-concat'),
     minifyCss = require('gulp-minify-css'),
-		uglify = require('gulp-uglify');
+	uglify = require('gulp-uglify'),
+    less = require("gulp-less"),
+	path = require("path");
 
 gulp.task('testrun', function (done) {
   return new KarmaServer({
@@ -27,9 +29,10 @@ gulp.task('clean', function(){
 });
 
 gulp.task('copy', ['clean'], function(){
-	gulp.src('node_modules/angular/angular.min.js')
+  gulp.src('node_modules/angular/angular.min.js')
       .pipe(gulp.dest('Dist/js/lib'));
-  gulp.src('src/app/*.css')
+  gulp.src('src/app/*.less')
+     .pipe(less())
       .pipe(minifyCss())
       .pipe(gulp.dest('Dist/css'));
   gulp.src('src/app/*.html')
